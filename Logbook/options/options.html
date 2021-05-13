@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8"/>
+
+		<style>
+			.bottom-1em {
+				margin-bottom: 1em;
+			}
+
+			.prompt-label {
+				display: inline-block;
+  				margin-bottom: 0.3em;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+
+		<form>
+			<div class="bottom-1em" id="setUnit">
+				<label class="prompt-label" for="setUnit">Smallest unit of time to show:</label><br>
+				
+				<input type="radio" id="mili" name="unit" value="0" checked>
+					<label for="mili">Milliseconds</label> <br>
+
+				<input type="radio" id="sec" name="unit" value="1">
+					<label for="sec">Seconds</label> <br>
+
+				<input type="radio" id="min" name="unit" value="2">
+					<label for="min">Minutes</label> <br>
+
+				<input type="radio" id="hr" name="unit" value="3">
+					<label for="hr">Hours</label> <br>
+			</div>
+
+			<div class="bottom-1em" id="setBuffer">
+				<label class="prompt-label" for="bufferTime">Page redirect time buffer (in milliseconds)</label><br>
+				<input type="number" id="bufferTime" name="bufferTime" value="1000">
+			</div>
+
+			<button class="browser-style" type="submit">Save changes</button>
+
+		</form>
+		<script src="options.js"></script>
+	</body>
+</html>
